@@ -1,3 +1,4 @@
+// https://leetcode.com/submissions/detail/506641513/
 class Solution {
     bool doesAlicePlayFirst(int n, int i, int j) {
         return (n - (j - i + 1)) % 2 == 0;
