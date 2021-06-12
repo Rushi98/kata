@@ -29,9 +29,9 @@ public:
         int n = stones.size();
         vector<int> cumulativeArray = computeCumulativeArray(stones);
         
-        // dp[i][j] : alice's score - bob's score for stones [i...j]
-        // Note: It's alice's first turn if (n - len([i...j])) is even
-        //       else it's bob's first turn.
+        // dp[i][j] : (Alice's score - Bob's score) for stones [i...j]
+        // Note: It's Alice's first turn if (n - len([i...j])) is even
+        //       else it's Bob's first turn.
         vector<vector<int>> dp(n, vector<int>(n));
         
         // base case
