@@ -28,7 +28,6 @@ public:
     int stoneGameVII(vector<int>& stones) {
         int n = stones.size();
         vector<int> cumulativeArray = computeCumulativeArray(stones);
-        bool bobPlaysOdd = (n % 2 == 1);
         
         // dp[i][j] : alice's score - bob's score for stones [i...j]
         // Note: It's alice's first turn if (n - len([i...j])) is even
